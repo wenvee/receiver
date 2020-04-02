@@ -1,0 +1,21 @@
+server:
+  port: 12250
+spring:
+  servlet:
+    multipart:
+      max-file-size: 2048MB
+      max-request-size: 2048MB
+
+receiver:
+  ### File storage directory
+  storage-path: .temp
+  ### whether to verify checksum, default true
+  #verify-checksum: true
+
+logging:
+  level:
+    root: info
+  file:
+    name: logs/receiver.log
+    max-history: 7
+    max-size: 200
